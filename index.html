@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Clima</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<style>
+		#map {
+			height: 100vh;
+    		width: 50vw;}
+		.centrado {
+			text-align: center;}
+
+		.img-responsive {
+    		width: 100%;
+    		height: auto;}
+	</style>
+
+</head>
+<body>
+	<div class="row">
+		<div class="col-sm-6">
+			<div id="map"></div>
+		</div>
+		<div class="col-sm-6">
+			<h1 class="centrado">Clima</h1>
+			<div class="form-group">
+				<select class="form-control" id="locations" placeholder="Seleccione ciudad">
+					<option value="talca">Talca</option>
+				    <option value="paris">Paris</option>
+				    <option value="londres">Londres</option>
+				</select>
+				<div class="col-sm-offset-3 col-sm-6">
+					<img src="" class="centrado" alt="img-responsive">
+				</div>
+			</div>	
+		</div>
+	</div>
+
+
+	
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<script src="assets/js/script.js"></script>
+	
+	<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOKmxajNmvQEHdrQoRl-YgU-5Ufhuu8NM&callback=initMap">
+    </script>
+</body>
+</html>
